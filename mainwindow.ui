@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>791</width>
+    <height>598</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>773</width>
+      <height>433</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>CrossCursor</cursorShape>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="kol_way_butt">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>450</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>кол-во путей</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clr_butt">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>520</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>очистить</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>490</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>10</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>450</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_one">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Б</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>В</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Г</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Д</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Е</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ё</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ж</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>З</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>И</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>К</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Л</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Н</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>О</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>П</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Р</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>С</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Т</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_last">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Б</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>В</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Г</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Д</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Е</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ё</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ж</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>З</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>И</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>К</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Л</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Н</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>О</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>П</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Р</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>С</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Т</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>520</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>6</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>посдедняя</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>490</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>6</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>первая </string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>498</x>
+      <y>504</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>6</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>проходя через</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_is_have">
+    <property name="geometry">
+     <rect>
+      <x>598</x>
+      <y>501</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_have">
+    <property name="geometry">
+     <rect>
+      <x>618</x>
+      <y>507</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Б</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>В</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Г</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Д</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Е</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ё</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ж</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>З</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>И</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>К</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Л</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Н</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>О</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>П</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Р</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>С</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Т</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_isnt_have">
+    <property name="geometry">
+     <rect>
+      <x>598</x>
+      <y>524</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>527</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>6</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>не проходя через</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_standart">
+    <property name="geometry">
+     <rect>
+      <x>598</x>
+      <y>477</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>498</x>
+      <y>480</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>6</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>обчный режим</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="kol_way_all">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>450</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>стоимость каждой точки</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="way_butt">
+    <property name="geometry">
+     <rect>
+      <x>73</x>
+      <y>462</y>
+      <width>37</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>путь</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="point_butt">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>461</y>
+      <width>43</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>точка</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>134</x>
+      <y>461</y>
+      <width>41</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Б</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>В</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Г</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Д</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Е</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ё</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ж</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>З</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>И</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>К</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Л</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Н</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>О</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>П</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Р</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>С</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Т</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>791</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
